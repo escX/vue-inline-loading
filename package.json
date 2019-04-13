@@ -1,6 +1,6 @@
 {
   "name": "vue-inline-loading",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue directive for show loading in a container",
   "main": "dist/vue-inline-loading.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "project-html-template": "^1.0.0",
     "style-loader": "^0.23.1",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",

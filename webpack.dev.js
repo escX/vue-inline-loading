@@ -2,8 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const ProjectHtmlTemplate = require('project-html-template');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const {name, description} = require('./package');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -22,7 +24,11 @@ module.exports = merge(common, {
       cleanOnceBeforeBuildPatterns: ['*', '!src']
     }),
     new HtmlWebpackPlugin({
-      template: './examples/src/index.html'
+      title: name,
+      desc: description,
+      repository: `https://github.com/escX/${name}.git`,
+      template: ProjectHtmlTemplate,
+      favicon: './examples/src/favicon.ico'
     }),
     new VueLoaderPlugin()
   ],

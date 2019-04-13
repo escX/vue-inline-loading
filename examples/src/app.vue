@@ -1,9 +1,12 @@
 <template>
-  <div>
-  <div id="app" v-loading="loadingShow">
-
-  </div>
-  <button @click="loadingShow = !loadingShow">button</button>
+  <div id="app">
+    <div class="demo" v-loading="loadingShow">
+      <p>v-loading="loadingShow"</p>
+    </div>
+    <div class="btn-box">
+      <span>loadingShow: {{loadingShow}}</span>
+      <button @click="loadingShow = !loadingShow">loading</button>
+    </div>
   </div>
 </template>
 
@@ -11,16 +14,25 @@
 export default {
   data() {
     return {
-      loadingShow: true
+      loadingShow: false
     };
   }
 };
 </script>
 
 <style>
-#app {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #999;
+.demo {
+  width: 560px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 200px;
+}
+.btn-box {
+  margin-top: 20px;
+}
+.btn-box button {
+  margin-left: 50px;
 }
 </style>
