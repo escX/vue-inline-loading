@@ -1,6 +1,6 @@
 {
   "name": "vue-inline-loading",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Vue directive for show loading in a container",
   "main": "dist/vue-inline-loading.js",
   "scripts": {
