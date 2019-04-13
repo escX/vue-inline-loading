@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>vue-inline-loading</title>
-</head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #111;
+      background-color: #fcfcfc;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #0074d9;
+    }
+
+    a:focus,
+    a:hover {
+      color: #0059a6;
+    }
+
+    a:active,
+    a:hover {
+      outline: 0;
+    }
+
+    .main {
+      width: 560px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      padding: 10px 0 30px;
+    }
+
+    .title {
+      color: #333;
+    }
+
+    .desc {
+      color: #999;
+      word-break: break-word;
+    }
+
+    .repository {
+      display: block;
+      margin-top: 15px;
+    }
+
+  </style>
+<link rel="shortcut icon" href="favicon.ico"></head>
+
 <body>
-  <div id="app"></div>
+  <div class="main">
+    <div class="header">
+      <h1 class="title">vue-inline-loading</h1>
+      <p class="desc">Vue directive for show loading in a container</p>
+      <a class="repository" href="https://github.com/escX/vue-inline-loading.git">Source on GitHub</a>
+    </div>
+    <div id="app"></div>
+  </div>
 <script type="text/javascript" src="main.js"></script></body>
+
 </html>
