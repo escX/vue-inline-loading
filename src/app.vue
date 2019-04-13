@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="demo" v-loading="loadingShow">
-      <p>v-loading="loadingShow"</p>
+      <pre>v-loading="loadingShow"</pre>
     </div>
     <div class="btn-box">
       <span>loadingShow: {{loadingShow}}</span>
@@ -27,7 +27,7 @@ export default {
   background-color: #fff;
   border: 1px solid #eee;
   text-align: center;
-  line-height: 200px;
+  padding-top: 70px;
 }
 .btn-box {
   margin-top: 20px;
