@@ -20,13 +20,8 @@ import VueInlineLoading from 'vue-inline-loading'
 ```
 
 ```js
-// 全局注册
+// main.js
 Vue.use(VueInlineLoading)
-
-// 或者局部注册
-new Vue({
-  directives: {VueInlineLoading}
-})
 ```
 
 ```html
